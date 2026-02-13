@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Emilys Candy", serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(120deg, #fff, #fa8fd3);
+  padding: 20px;
+}
+
+/* Responsive Video */
+video {
+  width: 100%;
+  max-width: 550px; /* limits size on laptop */
+  height: auto; /* keeps natural ratio */
+  display: block;
+  border-radius: 16px;
+}
