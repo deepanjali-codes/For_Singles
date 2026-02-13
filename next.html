@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="icon" href="download.gif" type="image/gif" />
+    <link rel="stylesheet" href="next.css" />
+  </head>
+  <body>
+    <video id="video" autoplay>
+      <source src="v1.mp4" type="video/mp4" />
+    </video>
+  </body>
+  <script>
+    const video = document.getElementById("video");
+
+    document.addEventListener("click", () => {
+      video.muted = false;
+      video.play().catch((error) => {
+        console.log("Playback failed:", error);
+      });
+    });
+  </script>
+</html>
